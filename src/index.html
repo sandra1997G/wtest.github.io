@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form" id="consultation">
+            <form action="#">
+                <div class="wrapper">
+                    <div class="wrapper_inp">
+                        <input placeholder="Ваш номер..." name="phone">
+                    </div>
+                    <button class="btn btn_dark btn_min">
+                        <div class="button_text">ЗАКАЗАТЬ <i class="fas fa-check"></i></div>
+                    </button>
+                </div>
+            </form>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="overlay">
+                <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+                <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="../dist/bundle.js"></script>
+</body>
+</html>

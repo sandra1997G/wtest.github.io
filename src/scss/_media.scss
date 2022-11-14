@@ -1,0 +1,40 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px){
+    .container{
+        max-width: 720px;
+    } 
+}
+@media (max-width: 767px){
+    .container{
+        max-width: 540px;
+        form {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+        input {
+            transform: skewX(0deg);
+            &::placeholder{
+                transform: skewX(0deg); 
+            }
+        }
+        button {
+            transform: skewX(0deg);
+        }
+        .button_text {
+            transform: skewX(0deg);
+        }
+    }
+}
+
+
+
+    

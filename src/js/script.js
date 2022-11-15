@@ -1,3 +1,13 @@
+
+
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
+library.add(faCheck);
+
+dom.watch();
+
+
+
 $(document).ready(function(){
 
     $('.modal__close').on('click', function() {
@@ -32,7 +42,6 @@ $(document).ready(function(){
                 data: $(this).serialize()
             }).done(function() {
                 $(this).find("input").val("");
-                $('#consultation').fadeOut();
                 $('.overlay, #thanks').fadeIn('slow');
     
                 $('form').trigger('reset');
@@ -42,15 +51,3 @@ $(document).ready(function(){
  
 
 })
-
-// require('font-awesome/css/font-awesome.css');
-
-// var container = document.getElementById('container');
-// container.innerHTML = '<i class="fa fa-twitter"></i>';
-
-
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
-library.add(faCheck);
-
-dom.watch();

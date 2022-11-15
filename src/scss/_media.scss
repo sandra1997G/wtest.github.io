@@ -3,7 +3,6 @@
         max-width: 960px;
     }
 }
-
 @media (max-width: 991px){
     .container{
         max-width: 720px;
@@ -12,29 +11,50 @@
 @media (max-width: 767px){
     .container{
         max-width: 540px;
-        form {
-            width: 300px;
-        }
     }
 }
 @media (max-width: 575px){
     .container{
+        margin: 0 auto;
         width: 100%;
-        input {
-            transform: skewX(0deg);
-            &::placeholder{
-                transform: skewX(0deg); 
-            }
-        }
-        button {
-            transform: skewX(0deg);
-        }
-        .button_text {
-            transform: skewX(0deg);
-        }
     }
+    form {
+        margin-left: 5px;
+    }   
+    button {
+        transform: skewX(0deg);
+    }
+    input {
+        transform: skewX(0deg);
+        padding: 0;
+    }
+    .button_text {
+        transform: skewX(0deg);
+    }       
+    .wrapper_inp{
+        transform: skewX(0deg);
+        padding: 0;
+    }           
+    .error {
+        transform: skewX(0deg); 
+    }
+    label.error {
+        transform: skewX(0deg);
+        max-width: 230px;
+    }
+    .modal {
+        padding: 20px 20px 20px 20px;
+        min-height: 60px;
+        width: 65%;
+        left: 45%;
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            right: -35px;
+        }
+    } 
 }
-
-
-
-    

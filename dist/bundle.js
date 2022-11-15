@@ -3193,6 +3193,16 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.mjs");
 /* harmony import */ var _fortawesome_free_solid_svg_icons_faCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faCheck */ "./node_modules/@fortawesome/free-solid-svg-icons/faCheck.js");
+
+
+
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.library.add(_fortawesome_free_solid_svg_icons_faCheck__WEBPACK_IMPORTED_MODULE_1__.faCheck);
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.dom.watch();
+
+
+
 $(document).ready(function(){
 
     $('.modal__close').on('click', function() {
@@ -3227,7 +3237,7 @@ $(document).ready(function(){
                 data: $(this).serialize()
             }).done(function() {
                 $(this).find("input").val("");
-                $('#consultation').fadeOut();
+                // $('#consultation').fadeOut();
                 $('.overlay, #thanks').fadeIn('slow');
     
                 $('form').trigger('reset');
@@ -3237,19 +3247,6 @@ $(document).ready(function(){
  
 
 })
-
-// require('font-awesome/css/font-awesome.css');
-
-// var container = document.getElementById('container');
-// container.innerHTML = '<i class="fa fa-twitter"></i>';
-
-
-;
-
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.library.add(_fortawesome_free_solid_svg_icons_faCheck__WEBPACK_IMPORTED_MODULE_1__.faCheck);
-
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.dom.watch();
-
 })();
 
 /******/ })()
